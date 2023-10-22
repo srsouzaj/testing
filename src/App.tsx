@@ -8,7 +8,9 @@ function App() {
     <div>
       <h1>Hello world!</h1>
       <p>{message}</p>
-      <button onClick={() => setMessage("New message!")}>Change message</button>
+      <button
+        style={{ backgroundColor: "red", color: "white", padding: 10 }}
+        onClick={() => setMessage("New message!")}>Change message</button>
     </div>
   );
 }

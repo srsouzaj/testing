@@ -22,7 +22,9 @@ describe("App Component", () => {
         screen.getByText("Let's learn more about testing in React");
         const button = screen.getByText(/change message/i)
 
-        fireEvent.click(button)
+        fireEvent.click(button);
+
+        screen.getByText(/new message!/i);
     })
 
 

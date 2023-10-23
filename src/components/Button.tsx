@@ -5,7 +5,11 @@ const Button = ({
 }: { disabled: boolean, children: ReactNode, onClick: () => void }) => {
     return <button
         onClick={onClick}
-        style={{ backgroundColor: disabled ? "red" : "blue" }}
+        style={{
+            backgroundColor: disabled ? "red" : "blue",
+            color: "white",
+            padding: 10
+        }}
     >{children}</button>
 
 }
